@@ -4,6 +4,7 @@ int main()
 {
     SetConsoleCP(1251); 
     SetConsoleOutputCP(1251);
+    
     double distance, time, speed;
 
     std::cout << "Ââåäèòå ðàññòîÿíèå äî àýðîïîðòà (êì): ";
