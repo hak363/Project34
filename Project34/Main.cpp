@@ -1,16 +1,19 @@
 #include <iostream>
 
-int main() {
+int main() 
+{
+    SetConsoleCP(1251); 
+    SetConsoleOutputCP(1251);
     double distance, time, speed;
 
-    std::cout << "Ââåäèòå ðàññòîÿíèå äî àýðîïîðòà (êì): ";
+    std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã°Ã Ã±Ã±Ã²Ã®Ã¿Ã­Ã¨Ã¥ Ã¤Ã® Ã Ã½Ã°Ã®Ã¯Ã®Ã°Ã²Ã  (ÃªÃ¬): ";
     std::cin >> distance;
 
-    std::cout << "Ââåäèòå âðåìÿ ïîåçäêè (â ÷àñàõ): ";
+    std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã°Ã¥Ã¬Ã¿ Ã¯Ã®Ã¥Ã§Ã¤ÃªÃ¨ (Ã¢ Ã·Ã Ã±Ã Ãµ): ";
     std::cin >> time;
 
     speed = distance / time;
 
-    std::cout << "Ñêîðîñòü: " << speed << " êì/÷\n";
+    std::cout << "Ã‘ÃªÃ®Ã°Ã®Ã±Ã²Ã¼: " << speed << " ÃªÃ¬/Ã·\n";
     return 0;
 }
