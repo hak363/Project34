@@ -4,6 +4,7 @@ int main()
 {
     SetConsoleCP(1251); 
     SetConsoleOutputCP(1251);
+    
     int h1, m1, s1, h2, m2, s2;
 
     std::cout << "Ââåäèòå âðåìÿ íà÷àëà (÷àñ ìèí ñåê): ";
