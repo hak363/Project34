@@ -1,22 +1,25 @@
 #include <iostream>
 
-int main() {
+int main() 
+{
+    SetConsoleCP(1251); 
+    SetConsoleOutputCP(1251);
     int h1, m1, s1, h2, m2, s2;
 
-    std::cout << "Введите время начала (час мин сек): ";
+    std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГўГ°ГҐГ¬Гї Г­Г Г·Г Г«Г  (Г·Г Г± Г¬ГЁГ­ Г±ГҐГЄ): ";
     std::cin >> h1 >> m1 >> s1;
 
-    std::cout << "Введите время окончания (час мин сек): ";
+    std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ ГўГ°ГҐГ¬Гї Г®ГЄГ®Г­Г·Г Г­ГЁГї (Г·Г Г± Г¬ГЁГ­ Г±ГҐГЄ): ";
     std::cin >> h2 >> m2 >> s2;
 
     int start = h1 * 3600 + m1 * 60 + s1;
     int end = h2 * 3600 + m2 * 60 + s2;
 
-    int duration = (end - start) / 60;   // минуты
-    double cost = duration * 2.0;        // цена: 2 грн/мин
+    int duration = (end - start) / 60;   // Г¬ГЁГ­ГіГІГ»
+    double cost = duration * 2.0;        // Г¶ГҐГ­Г : 2 ГЈГ°Г­/Г¬ГЁГ­
 
-    std::cout << "Продолжительность: " << duration << " минут\n";
-    std::cout << "Стоимость поездки: " << cost << " грн\n";
+    std::cout << "ГЏГ°Г®Г¤Г®Г«Г¦ГЁГІГҐГ«ГјГ­Г®Г±ГІГј: " << duration << " Г¬ГЁГ­ГіГІ\n";
+    std::cout << "Г‘ГІГ®ГЁГ¬Г®Г±ГІГј ГЇГ®ГҐГ§Г¤ГЄГЁ: " << cost << " ГЈГ°Г­\n";
 
     return 0;
 }
